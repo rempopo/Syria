@@ -50,18 +50,19 @@
 #define UNIFORM_ITEMS_L		["ACE_fieldDressing",5],["ACE_packingBandage",5],["ACE_elasticBandage",5],["ACE_tourniquet",2],["ACE_morphine",2],["ACE_epinephrine",2],["ACE_quikclot",5],["ACE_CableTie",2],["ACE_Flashlight_XL50",1],["ACE_EarPlugs",1],["ACE_MapTools",1]
 // ****************
 
+/*
+	British Armed Forces 4+4
+*/
 
-// Free Syrian Army 4+4
-
-
-// British Armed Forces 4+4
-
+//	Clothing
 #define uk_h ["CUP_H_BAF_Helmet_4_MTP","CUP_H_BAF_Helmet_2_MTP","CUP_H_BAF_Helmet_Net_2_MTP","CUP_H_BAF_Helmet_1_MTP"]
 #define uk_u ["CUP_U_B_BAF_MTP_S2_UnRolled","CUP_U_B_BAF_MTP_S1_RolledUp","CUP_U_B_BAF_MTP_Tshirt"]
 
+//	Weapons for Rifleman
 #define uk_r_w ["","CUP_arifle_L85A2","CUP_arifle_L85A2_G"]
 #define uk_r_a ["30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"]
 
+//	Weapons for Marksman
 #define uk_m_w ["CUP_arifle_L86A2","CUP_srifle_L129A1_HG"]
 #define uk_m_a ["30Rnd_556x45_Stanag","CUP_20Rnd_762x51_L129_M"]
 
@@ -96,10 +97,6 @@ kit_uk_r = [
 ];
 
 //	Marksman
-
-// Syrian Armed Forces 4+3
-
-// AFRF Desert 4+3
 
 
 
