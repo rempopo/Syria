@@ -177,8 +177,6 @@ kit_ru_mm = [
 
 //}}}
 
-//}}}
-
 //{{{	Cargo kit
 cargo_kit_ru = [
 	[["rhs_weap_rpg26",2],["rhs_weap_rshg2",2]],
@@ -188,7 +186,17 @@ cargo_kit_ru = [
 ];
 //}}}
 
+//}}}
+
 //{{{ British Armed Forces
+
+kit_uk_random = ["kit_uk_sl","kit_uk_2ic"
+		,"kit_uk_ar","kit_uk_ar"
+		,"kit_uk_gr","kit_uk_gr"
+		,"kit_uk_r","kit_uk_r"
+];
+
+//{{{	Uk Units
 //{{{	Random Items
 
 //	Clothing
@@ -296,6 +304,8 @@ kit_uk_crew = [
 	["<BACKPACK ITEMS >> ",[]]
 ]; //}}}
 
+//}}}
+
 //{{{	Cargo
 cargo_kit_uk = [
 	[["CUP_launch_NLAW",2]],
@@ -303,15 +313,15 @@ cargo_kit_uk = [
 	[["ACE_fieldDressing",10],["ACE_packingBandage",10],["ACE_elasticBandage",10],["ACE_tourniquet",10],["ACE_morphine",10],["ACE_epinephrine",10],["ACE_quikclot",10]],
 	[]
 ]; //}}}
-//}}}
 
+//}}}
 
 //{{{ US Special Forces
 
 kit_ussf_random = ["kit_ussf_sl"
 		,"kit_ussf_ftl","kit_ussf_ftl"
 		,"kit_ussf_ar","kit_ussf_ar"
-		,"kit_ussf_gr","kit_ussf_gr
+		,"kit_ussf_gr","kit_ussf_gr"
 		,"kit_ussf_r","kit_ussf_r"
 ];
 
