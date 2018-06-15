@@ -50,9 +50,10 @@
 #define UNIFORM_ITEMS_L		["ACE_fieldDressing",5],["ACE_packingBandage",5],["ACE_elasticBandage",5],["ACE_tourniquet",2],["ACE_morphine",2],["ACE_epinephrine",2],["ACE_quikclot",5],["ACE_CableTie",2],["ACE_Flashlight_XL50",1],["ACE_EarPlugs",1],["ACE_MapTools",1]
 // ****************
 
-/*
-	British Armed Forces 4+4
-*/
+//{{{	British Armed Forces 4+4
+
+//{{{	Random Items
+
 //	Clothing
 #define uk_h ["CUP_H_BAF_Helmet_4_MTP","CUP_H_BAF_Helmet_2_MTP","CUP_H_BAF_Helmet_Net_2_MTP","CUP_H_BAF_Helmet_1_MTP"]
 #define uk_u ["CUP_U_B_BAF_MTP_S2_UnRolled","CUP_U_B_BAF_MTP_S1_RolledUp","CUP_U_B_BAF_MTP_Tshirt","CUP_U_B_BAF_MTP_S3_RolledUp","CUP_U_B_BAF_MTP_S4_UnRolled","CUP_U_B_BAF_MTP_S5_UnRolled","CUP_U_B_BAF_MTP_S6_UnRolled"]
@@ -65,7 +66,9 @@
 #define uk_m_w ["CUP_arifle_L86A2","CUP_srifle_L129A1_HG"]
 #define uk_m_a ["30Rnd_556x45_Stanag","CUP_20Rnd_762x51_L129_M"]
 
-//	Section Leader
+//}}}
+
+//{{{	Section Leader
 kit_uk_sl = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader","tf_rt1523g_big_rhs",uk_h,""],
 	["<PRIMARY WEAPON >>  ","CUP_arifle_L85A2_GL","30Rnd_556x45_Stanag",["","","CUP_optic_ACOG",""]],
@@ -75,9 +78,9 @@ kit_uk_sl = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",9],["1Rnd_HE_Grenade_shell",14],["SmokeShell",2],["SmokeShellBlue",2],["1Rnd_SmokeRed_Grenade_shell",4]]],
 	["<BACKPACK ITEMS >> ",[]]
-];
+]; //}}}
 
-//	2IC
+//{{{	2IC
 kit_uk_2ic = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_SquadLeader","",uk_h,""],
 	["<PRIMARY WEAPON >>  ","CUP_arifle_L85A2_GL","30Rnd_556x45_Stanag",["","","CUP_optic_ACOG",""]],
@@ -87,9 +90,9 @@ kit_uk_2ic = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",9],["1Rnd_HE_Grenade_shell",14],["SmokeShell",2],["SmokeShellBlue",2],["1Rnd_SmokeRed_Grenade_shell",4]]],
 	["<BACKPACK ITEMS >> ",[]]
-];
+]; //}}}
 
-//	Automatic Rifleman
+//{{{	Automatic Rifleman
 kit_uk_ar = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner","CUP_B_Bergen_BAF",uk_h,""],
 	["<PRIMARY WEAPON >>  ","CUP_lmg_L110A1","CUP_200Rnd_TE4_Red_Tracer_556x45_M249",["","","CUP_optic_ElcanM145",""]],
@@ -99,9 +102,9 @@ kit_uk_ar = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HANDGUN MAG",3],["HandGrenade",2],["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",2]]],
 	["<BACKPACK ITEMS >> ",[["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",2]]]
-];
+]; //}}}
 
-//	Grenadier
+//{{{	Grenadier
 kit_uk_gr = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_Grenadier","",uk_h,""],
 	["<PRIMARY WEAPON >>  ","CUP_arifle_L85A2_GL","30Rnd_556x45_Stanag",["","","CUP_optic_SUSAT",""]],
@@ -111,9 +114,9 @@ kit_uk_gr = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS,["ACE_EntrenchingTool",1]]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",9],["1Rnd_HE_Grenade_shell",20]]],
 	["<BACKPACK ITEMS >> ",[]]
-];
+]; //}}}
 
-//	Rifleman
+//{{{	Rifleman
 kit_uk_r = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman","CUP_B_Bergen_BAF",uk_h,""],
 	["<PRIMARY WEAPON >>  ",uk_r_w,uk_r_a,["","","CUP_optic_CompM4",""]],
@@ -123,9 +126,9 @@ kit_uk_r = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS,["ACE_EntrenchingTool",1]]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",9]]],
 	["<BACKPACK ITEMS >> ",[["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",2]]]
-];
+]; //}}}
 
-//	Marksman
+//{{{	Marksman
 kit_uk_m = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_Rifleman","CUP_B_Bergen_BAF",uk_h,""],
 	["<PRIMARY WEAPON >>  ",uk_m_w,uk_m_a,["","","CUP_optic_ACOG",""]],
@@ -135,9 +138,9 @@ kit_uk_m = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS,["ACE_EntrenchingTool",1]]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",9]]],
 	["<BACKPACK ITEMS >> ",[["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",2]]]
-];
+]; //}}}
 
-//	Crew
+//{{{	Crew
 kit_uk_crew = [
 	["<EQUIPEMENT >>  ","CUP_U_B_BAF_MTP_Tshirt","CUP_V_BAF_Osprey_Mk2_DDPM_Pilot","","CUP_H_BAF_Crew_Helmet_MTP",""],
 	["<PRIMARY WEAPON >>  ","CUP_arifle_L85A2_G","CUP_30Rnd_556x45_Stanag",["","","CUP_optic_MRad",""]],
@@ -147,12 +150,13 @@ kit_uk_crew = [
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS_L]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",3]]],
 	["<BACKPACK ITEMS >> ",[]]
-];
+]; //}}}
 
-//	Cargo
+//{{{	Cargo
 cargo_kit_uk = [
 	[["CUP_launch_NLAW",2]],
 	[["HandGrenade",10],["30Rnd_556x45_Stanag",30],["1Rnd_HE_Grenade_shell",30],["SmokeShell",10],["SmokeShellBlue",10],["1Rnd_SmokeRed_Grenade_shell",10],["CUP_17Rnd_9x19_glock17",10],["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",10]],
 	[["ACE_fieldDressing",10],["ACE_packingBandage",10],["ACE_elasticBandage",10],["ACE_tourniquet",10],["ACE_morphine",10],["ACE_epinephrine",10],["ACE_quikclot",10]],
 	[]
-];
+]; //}}}
+//}}}
