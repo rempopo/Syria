@@ -51,11 +51,11 @@
 // ****************
 
 //{{{ Russian Armed Forces
-// 	Clothing
+//{{{ 	Random Items
 #define ru_h ["rhs_6b47","rhs_6b47_bala","rhs_6b47_ess","rhs_6b47_ess_bala"]
 #define ru_v_r ["rhs_6b23_6sh116_od","rhs_6b23_6sh116"]
 #define ru_v_gr ["rhs_6b23_6sh116_vog_od","rhs_6b23_6sh116_vog"]
-
+//}}}
 
 kit_ru_msv = [ "kit_ru_sl"
 		,"kit_ru_mg"
@@ -66,7 +66,16 @@ kit_ru_msv = [ "kit_ru_sl"
 		,"kit_ru_r2"
 ];
 
-//{{{ MSV 4+3+2
+kit_ru_vv = [ "kit_ru_sl"
+		,"kit_ru_mg"
+		,"kit_ru_at"
+		,"kit_ru_aat"
+		,"kit_ru_mg"
+		,"kit_ru_gr"
+		,"kit_ru_mm"
+];
+
+//{{{	Ru Units
 kit_ru_sl = [
 	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_gr,"tf_mr3000_rhs",ru_h,""],
 	["<PRIMARY WEAPON >>  ","rhs_weap_ak74mr_gp25","rhs_30Rnd_545x39_AK",["rhs_acc_uuk","","rhs_acc_1p87",""]],
@@ -155,85 +164,6 @@ kit_ru_crew = [
 	["<BACKPACK ITEMS >> ",[]]
 ];
 
-//}}}
-
-kit_ru_vv = [ "kit_ru_sl"
-		,"kit_ru_mg"
-		,"kit_ru_at"
-		,"kit_ru_aat"
-		,"kit_ru_mg"
-		,"kit_ru_gr"
-		,"kit_ru_mm"
-];
-
-//{{{ VV 4+3
-
-kit_ru_sl = [
-	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_gr,"tf_mr3000_rhs",ru_h,""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74mr_gp25","rhs_30Rnd_545x39_AK",["rhs_acc_uuk","","rhs_acc_1p87",""]],
-	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","","",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["HandGrenade",2],["rhs_30Rnd_545x39_AK_green",9],["rhs_VOG25",14]]],
-	["<BACKPACK ITEMS >> ",[]]
-];
-
-kit_ru_mg = [
-	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_r,"rhs_assault_umbts",ru_h,""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_pkp","rhs_100Rnd_762x54mmR",["","","rhs_acc_1p29_pkp",""]],
-	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","rhs_weap_pya","rhs_mag_9x19_17",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["PRIMARY MAG",1],["HandGrenade",2],["HANDGUN MAG",3]]],
-	["<BACKPACK ITEMS >> ",[["PRIMARY MAG",2]]]
-];
-
-kit_ru_at = [
-	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_r,"rhs_rpg_empty",ru_h,""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74mr","rhs_30Rnd_545x39_AK",["rhs_acc_uuk","","rhs_acc_ekp8_18",""]],
-	["<LAUNCHER WEAPON >>  ","rhs_weap_rpg7","rhs_rpg7_PG7V_mag",["","rhs_acc_rpg7v_zeroing_100","",""]],
-	["<HANDGUN WEAPON >>  ","","",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["HandGrenade",2],["rhs_30Rnd_545x39_AK_green",9]]],
-	["<BACKPACK ITEMS >> ",[["rhs_rpg7_OG7V_mag",2],["SECONDARY MAG",2]]]
-];
-
-kit_ru_aat = [
-	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_gr,"rhs_rpg_empty",ru_h,""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74mr","rhs_30Rnd_545x39_AK",["rhs_acc_uuk","","rhs_acc_ekp8_18",""]],
-	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","","",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["HandGrenade",2],["rhs_30Rnd_545x39_AK_green",9]]],
-	["<BACKPACK ITEMS >> ",[["rhs_rpg7_OG7V_mag",2],["rhs_rpg7_PG7V_mag",2]]]
-];
-
-kit_ru_mg = [
-	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_r,"rhs_assault_umbts",ru_h,""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_pkp","rhs_100Rnd_762x54mmR",["","","rhs_acc_1p29_pkp",""]],
-	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","rhs_weap_pya","rhs_mag_9x19_17",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["PRIMARY MAG",1],["HandGrenade",2],["HANDGUN MAG",3]]],
-	["<BACKPACK ITEMS >> ",[["PRIMARY MAG",2]]]
-];
-
-kit_ru_gr = [
-	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_gr,"",ru_h,""],
-	["<PRIMARY WEAPON >>  ","rhs_weap_ak74mr_gp25","rhs_30Rnd_545x39_AK",["rhs_acc_uuk","","rhs_acc_1p87",""]],
-	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","","",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-	["<VEST ITEMS >> ",[["HandGrenade",2],["rhs_30Rnd_545x39_AK_green",9],["rhs_VOG25",14]]],
-	["<BACKPACK ITEMS >> ",[]]
-];
-
 kit_ru_mm = [
 	["<EQUIPEMENT >>  ","rhs_uniform_emr_des_patchless",ru_v_r,"rhs_assault_umbts",ru_h,""],
 	["<PRIMARY WEAPON >>  ","rhs_weap_svdp","rhs_10Rnd_762x54mmR_7N1",["","","rhs_acc_pso1m2",""]],
@@ -249,6 +179,16 @@ kit_ru_mm = [
 
 //}}}
 
+//{{{	Cargo kit
+cargo_kit_ru = [
+	[["rhs_weap_rpg26",2],["rhs_weap_rshg2",2]],
+	[["rhs_30Rnd_545x39_AK_green",30],["HandGrenade",10],["rhs_VOG25",10],["rhs_100Rnd_762x54mmR",10],["rhs_mag_9x19_17",10],["rhs_rpg7_OG7V_mag",5],["rhs_rpg7_PG7V_mag",5]],
+	[["ACE_fieldDressing",10],["ACE_packingBandage",10],["ACE_elasticBandage",10],["ACE_tourniquet",10],["ACE_morphine",10],["ACE_epinephrine",10],["ACE_quikclot",10]],
+	[]
+];
+//}}}
+
+//{{{ British Armed Forces
 //{{{	Random Items
 
 //	Clothing
@@ -264,6 +204,13 @@ kit_ru_mm = [
 #define uk_m_a ["30Rnd_556x45_Stanag","CUP_20Rnd_762x51_L129_M"]
 
 //}}}
+
+kit_uk_random = [ "kit_uk_sl"
+		,"kit_uk_ar" ,"kit_uk_ar"
+		,"kit_uk_2ic"
+		,"kit_uk_gr" ,"kit_uk_gr"
+		,"kit_uk_r" ,"kit_uk_r"
+];
 
 //{{{	Section Leader
 kit_uk_sl = [
