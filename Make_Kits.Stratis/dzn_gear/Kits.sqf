@@ -249,8 +249,6 @@ kit_ru_mm = [
 
 //}}}
 
-//{{{ British Armed Forces 4+4
-
 //{{{	Random Items
 
 //	Clothing
@@ -296,7 +294,7 @@ kit_uk_ar = [
 	["<EQUIPEMENT >>  ",uk_u,"CUP_V_BAF_Osprey_Mk4_MTP_MachineGunner","CUP_B_Bergen_BAF",uk_h,""],
 	["<PRIMARY WEAPON >>  ","CUP_lmg_L110A1","CUP_200Rnd_TE4_Red_Tracer_556x45_M249",["","","CUP_optic_ElcanM145",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-	["<HANDGUN WEAPON >>  ","CUP_hgun_Glock17_blk","CUP_17Rnd_9x19_glock17",["","","",""]],
+	["<HANDGUN WEAPON >>  ","KA_P226_Black","KA_P226_15Rnd_9x19_FMJ_Mag",["","","",""]],
 	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HANDGUN MAG",3],["HandGrenade",2],["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",2]]],
