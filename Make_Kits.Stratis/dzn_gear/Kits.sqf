@@ -58,21 +58,21 @@
 //}}}
 
 kit_ru_msv = [ "kit_ru_sl"
-		,"kit_ru_mg"
-		,"kit_ru_at"
-		,"kit_ru_aat"
-		,"kit_ru_gr"
-		,"kit_ru_r1"
-		,"kit_ru_r2"
+	,"kit_ru_mg"
+	,"kit_ru_at"
+	,"kit_ru_aat"
+	,"kit_ru_gr"
+	,"kit_ru_r1"
+	,"kit_ru_r2"
 ];
 
 kit_ru_vv = [ "kit_ru_sl"
-		,"kit_ru_mg"
-		,"kit_ru_at"
-		,"kit_ru_aat"
-		,"kit_ru_mg"
-		,"kit_ru_gr"
-		,"kit_ru_mm"
+	,"kit_ru_mg"
+	,"kit_ru_at"
+	,"kit_ru_aat"
+	,"kit_ru_mg"
+	,"kit_ru_gr"
+	,"kit_ru_mm"
 ];
 
 //{{{	Ru Units
@@ -381,4 +381,124 @@ kit_ussf_r = [
     ["<BACKPACK ITEMS >> ",[["rhsusf_100Rnd_556x45_M855_soft_pouch",4]]]
 ];
 //}}}
+//}}}
+
+//{{{ Syrian Armed forces
+
+//{{{	Random Items
+#define syr_u ["rhsgref_uniform_woodland","rhsgref_uniform_woodland","rhsgref_uniform_woodland","rhsgref_uniform_woodland_olive"]
+#define syr_v ["V_TacVest_camo","V_TacVest_oli","V_I_G_resistanceLeader_F"]
+#define syr_h ["usm_helmet_pasgt_w","usm_helmet_pasgt_g_w","usm_bdu_cap_wdl","usm_bdu_cap_portliz","usm_bdu_cap_odg","H_PASGT_basic_olive_F","H_Cap_blk","H_Cap_grn","H_Cap_oli","CUP_H_FR_Cap_Headset_Green","rhsgref_helmet_pasgt_olive","ssh68_khaki"]
+
+#define syr_ar_w ["rhs_weap_pkm","hlc_rifle_rpk"]
+#define syr_ar_a ["rhs_100Rnd_762x54mmR","hlc_75Rnd_762x39_Drum"]
+//}}}
+
+kit_syr_random = [ "kit_syr_sl"
+	,"kit_syr_ar"
+	,"kit_syr_at"
+	,"kit_syr_aat"
+	,"kit_syr_gr"
+	,"kit_syr_r1"
+	,"kit_syr_r2"
+];
+
+//{{{	Syr Units
+kit_syr_sl = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"tf_mr3000_bwmod","CUP_H_CDF_OfficerCap_FST",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_akm_gp25","rhs_30Rnd_762x39mm",["rhs_acc_dtkakm","","",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5]]],
+	["<BACKPACK ITEMS >> ",[["rhs_VOG25",10],["rhs_GRD40_White",4]]]
+];
+kit_syr_ar = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"CUP_B_CivPack_WDL",syr_h,""],
+	["<PRIMARY WEAPON >>  ",syr_ar_w,syr_ar_a,["","","",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",2]]],
+	["<BACKPACK ITEMS >> ",[["PRIMARY MAG",4]]]
+];
+
+kit_syr_at = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"rhs_rpg_empty",syr_h,""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_akm","rhs_30Rnd_762x39mm",["rhs_acc_dtkakm","","",""]],
+	["<LAUNCHER WEAPON >>  ","rhs_weap_rpg7","rhs_rpg7_PG7V_mag",["","rhs_acc_rpg7v_zeroing_100","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5]]],
+	["<BACKPACK ITEMS >> ",[["rhs_rpg7_OG7V_mag",2],["rhs_rpg7_PG7VL_mag",2]]]
+];
+
+kit_syr_aat = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"rhs_rpg_empty",syr_h,""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_akm","rhs_30Rnd_762x39mm",["rhs_acc_dtkakm","","",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5]]],
+	["<BACKPACK ITEMS >> ",[["rhs_rpg7_OG7V_mag",2],["rhs_rpg7_PG7VL_mag",2]]]
+];
+
+kit_syr_gr = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"TRYK_B_FieldPack_Wood",syr_h,""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_akm_gp25","rhs_30Rnd_762x39mm",["rhs_acc_dtkakm","","",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5]]],
+	["<BACKPACK ITEMS >> ",[["rhs_VOG25",10],["rhs_GRD40_White",4]]]
+];
+
+kit_syr_r1 = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"rhs_rpg_empty",syr_h,""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_akm","rhs_30Rnd_762x39mm",["rhs_acc_dtkakm","","",""]],
+	["<LAUNCHER WEAPON >>  ","rhs_weap_rshg2","rhs_rshg2_mag",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5]]],
+	["<BACKPACK ITEMS >> ",[]]
+];
+
+kit_syr_r2 = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"rhs_rpg_empty",syr_h,""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_akm","rhs_30Rnd_762x39mm",["rhs_acc_dtkakm","","",""]],
+	["<LAUNCHER WEAPON >>  ","rhs_weap_rpg26","rhs_rpg26_mag",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5]]],
+	["<BACKPACK ITEMS >> ",[]]
+];
+
+kit_syr_crew = [
+	["<EQUIPEMENT >>  ",syr_u,syr_v,"","CUP_H_TK_TankerHelmet",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_aks74u","rhs_30Rnd_545x39_AK",["rhs_acc_pgs64_74u","","",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["HandGrenade",2],["rhs_30Rnd_545x39_AK_green",3]]],
+	["<BACKPACK ITEMS >> ",[]]
+];
+//}}}
+
+//{{{	Cargo Kit
+cargo_kit_syr = [
+	[["rhs_weap_rpg26",2],["rhs_weap_rshg2",2]],
+	[["HandGrenade",10],["hlc_75Rnd_762x39_Drum",10],["rhs_30Rnd_762x39mm",20],["rhs_GRD40_White",10],["rhs_VOG25",20],["rhs_100Rnd_762x54mmR",10]],
+	[["ACE_fieldDressing",10],["ACE_packingBandage",10],["ACE_elasticBandage",10],["ACE_tourniquet",10],["ACE_morphine",10],["ACE_epinephrine",10],["ACE_quikclot",10]],
+	[]
+];
+//}}}
+
 //}}}
