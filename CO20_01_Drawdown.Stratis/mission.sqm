@@ -1,0 +1,243 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=19;
+	};
+	class Camera
+	{
+		pos[]={5006.6958,230.08832,5906.1206};
+		dir[]={0.75035453,-0.66053015,0.03042944};
+		up[]={0.65998858,0.75077158,0.026764695};
+		aside[]={0.040521,-2.4381006e-007,-0.9992919};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"CUP_WheeledVehicles_LR",
+	"CUP_WheeledVehicles_MTVR",
+	"CUP_WheeledVehicles_UAZ",
+	"CUP_WheeledVehicles_BRDM2",
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="CUP_WheeledVehicles_LR";
+			name="CUP_WheeledVehicles_LR";
+		};
+		class Item1
+		{
+			className="CUP_WheeledVehicles_MTVR";
+			name="CUP_WheeledVehicles_MTVR";
+		};
+		class Item2
+		{
+			className="CUP_WheeledVehicles_UAZ";
+			name="CUP_WheeledVehicles_UAZ";
+		};
+		class Item3
+		{
+			className="CUP_WheeledVehicles_BRDM2";
+			name="CUP_WheeledVehicles_BRDM2";
+		};
+		class Item4
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=419509;
+class ScenarioData
+{
+	author="royal with cheese";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=8;
+		class Item0
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5033.3936,210.71407,5919.2773};
+				angles[]={6.2806959,3.120167,0.0075011365};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=0;
+			type="CUP_B_LR_Transport_GB_W";
+			atlOffset=-3.0517578e-005;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5018.771,210.67094,5926.6406};
+				angles[]={6.268187,3.1578522,6.278182};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=3;
+			type="CUP_B_LR_Transport_GB_W";
+			atlOffset=-0.00042724609;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5033.3701,210.73668,5926.7964};
+				angles[]={6.278182,3.1570814,0.0075011365};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6;
+			type="CUP_B_LR_Transport_GB_W";
+			atlOffset=-0.003036499;
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5018.9419,210.51259,5919.4561};
+				angles[]={6.2656889,3.139746,0.022495884};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=7;
+			type="CUP_B_LR_Transport_GB_W";
+			atlOffset=-0.00021362305;
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5026.2603,210.99431,5921.936};
+				angles[]={6.2806959,3.0767601,0.0075011365};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9;
+			type="CUP_B_MTVR_Repair_USMC";
+			atlOffset=-7.6293945e-005;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4646.7373,142.77135,5866.3882};
+				angles[]={6.2806721,1.8116003,0.019996032};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=13;
+			type="CUP_O_UAZ_Unarmed_SLA";
+			atlOffset=0.0023498535;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5209.458,161.36551,5809.7837};
+				angles[]={0.029995665,4.3861933,6.163754};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=16;
+			type="CUP_O_BRDM2_SLA";
+			atlOffset=-0.00016784668;
+		};
+		class Item7
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5035.3389,208.87483,5909.2197};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=18;
+					type="C_man_p_beggar_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=17;
+		};
+	};
+};
