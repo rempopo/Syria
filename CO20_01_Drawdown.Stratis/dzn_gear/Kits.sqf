@@ -51,13 +51,13 @@
 // ****************
 
 //{{{ Faces and voices
-#define face_arab ["GreekHead_A3_01","GreekHead_A3_03","PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03"]
-#define voice_arab ["male01per","male01per","male01per"]
+#define face_arab ["PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03"]
+#define voice_arab ["male01per","male02per","male03per"]
 
 
 #define face_white ["WhiteHead_01","WhiteHead_02","WhiteHead_03","WhiteHead_04","WhiteHead_05","WhiteHead_06","WhiteHead_07","WhiteHead_08","WhiteHead_09","WhiteHead_10","WhiteHead_11","WhiteHead_12","WhiteHead_13","WhiteHead_14","WhiteHead_15","WhiteHead_16","WhiteHead_17","WhiteHead_18","WhiteHead_19","WhiteHead_20"]
 
-#define voice_us ["male01eng","male02eng","male03eng","male04eng","male05eng","male06eng","male07eng","male08eng","male09eng","male10eng","male11eng","male12eng",]
+#define voice_us ["male01eng","male02eng","male03eng","male04eng","male05eng","male06eng","male07eng","male08eng","male09eng","male10eng","male11eng","male12eng"]
 #define voice_brit ["male01engb","male02engb","male03engb","male04engb","male05engb"]
 #define voice_ru ["rhs_male01rus","rhs_male02rus","rhs_male03rus","rhs_male04rus","rhs_male05rus"]
 //}}}
@@ -355,62 +355,62 @@ kit_ussf_random = ["kit_ussf_sl"
 
 //{{{ USSF Units
 kit_ussf_sl = [
-    ["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_squadleader","tf_rt1523g_big_rhs","rhsusf_opscore_mc_pelt",""],
-    ["<PRIMARY WEAPON >>  ","rhs_weap_hk416d10_LMT","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","","rhsusf_acc_ACOG3_USMC_3d",""]],
-    ["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-    ["<HANDGUN WEAPON >>  ","rhsusf_weap_m9","rhsusf_mag_15Rnd_9x19_JHP",["","","",""]],
-    ["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-    ["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-    ["<VEST ITEMS >> ",[["PRIMARY MAG",6],["HandGrenade",2],["rhs_mag_m18_green",2],["rhs_mag_m18_red",2],["HANDGUN MAG",2]]],
-    ["<BACKPACK ITEMS >> ",[]]
-	,["<IDENTITY >>",face_white,voice_us, ""]
+	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_squadleader","tf_rt1523g_big_rhs","rhsusf_opscore_mc_pelt",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_hk416d10_LMT","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","","rhsusf_acc_ACOG3_USMC_3d",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhsusf_weap_m9","rhsusf_mag_15Rnd_9x19_JHP",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["PRIMARY MAG",6],["HandGrenade",2],["rhs_mag_m18_green",2],["rhs_mag_m18_red",2],["HANDGUN MAG",2]]],
+	["<BACKPACK ITEMS >> ",[]]
+	,["<IDENTITY >>", face_white, voice_us,""]
 ];
- 
+
 kit_ussf_ftl = [
-    ["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_teamleader","","rhsusf_opscore_mc_pelt",""],
-    ["<PRIMARY WEAPON >>  ","rhs_weap_hk416d10_m320","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","rhsusf_acc_anpeq15_bk_h","rhsusf_acc_ACOG3_USMC_3d",""]],
-    ["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-    ["<HANDGUN WEAPON >>  ","","",["","","",""]],
-    ["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-    ["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-    ["<VEST ITEMS >> ",[["PRIMARY MAG",8],["rhs_mag_M433_HEDP",7],["HandGrenade",2],["rhs_mag_m18_green",1],["rhs_mag_m18_red",1]]],
-    ["<BACKPACK ITEMS >> ",[]]
+	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_teamleader","","rhsusf_opscore_mc_pelt",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_hk416d10_m320","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","rhsusf_acc_anpeq15_bk_h","rhsusf_acc_ACOG3_USMC_3d",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["PRIMARY MAG",8],["rhs_mag_M433_HEDP",7],["HandGrenade",2],["rhs_mag_m18_green",1],["rhs_mag_m18_red",1]]],
+	["<BACKPACK ITEMS >> ",[]]
 	,["<IDENTITY >>",face_white,voice_us, ""]
 ];
- 
+
 kit_ussf_ar = [
-    ["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_mg","rhsusf_falconii_mc","rhsusf_opscore_mc_pelt",""],
-    ["<PRIMARY WEAPON >>  ","rhs_weap_m249_pip_L_para","rhsusf_100Rnd_556x45_M855_soft_pouch",["","rhsusf_acc_anpeq15side_bk","rhsusf_acc_elcan_3d",""]],
-    ["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-    ["<HANDGUN WEAPON >>  ","rhsusf_weap_m9","rhsusf_mag_15Rnd_9x19_JHP",["","","",""]],
-    ["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-    ["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-    ["<VEST ITEMS >> ",[["rhs_mag_30Rnd_556x45_M855A1_Stanag",6],["HandGrenade",2],["HANDGUN MAG",2]]],
-    ["<BACKPACK ITEMS >> ",[["PRIMARY MAG",4]]]
+	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_mg","rhsusf_falconii_mc","rhsusf_opscore_mc_pelt",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_m249_pip_L_para","rhsusf_100Rnd_556x45_M855_soft_pouch",["","rhsusf_acc_anpeq15side_bk","rhsusf_acc_elcan_3d",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","rhsusf_weap_m9","rhsusf_mag_15Rnd_9x19_JHP",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["rhs_mag_30Rnd_556x45_M855A1_Stanag",6],["HandGrenade",2],["HANDGUN MAG",2]]],
+	["<BACKPACK ITEMS >> ",[["PRIMARY MAG",4]]]
 	,["<IDENTITY >>",face_white,voice_us, ""]
 ];
- 
+
 kit_ussf_ftl = [
-    ["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_teamleader","","rhsusf_opscore_mc_pelt",""],
-    ["<PRIMARY WEAPON >>  ","rhs_weap_hk416d10_m320","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","rhsusf_acc_anpeq15_bk_h","rhsusf_acc_ACOG3_USMC_3d",""]],
-    ["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-    ["<HANDGUN WEAPON >>  ","","",["","","",""]],
-    ["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-    ["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-    ["<VEST ITEMS >> ",[["PRIMARY MAG",8],["rhs_mag_M433_HEDP",7],["HandGrenade",2]]],
-    ["<BACKPACK ITEMS >> ",[]]
+	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_teamleader","","rhsusf_opscore_mc_pelt",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_hk416d10_m320","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","rhsusf_acc_anpeq15_bk_h","rhsusf_acc_ACOG3_USMC_3d",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["PRIMARY MAG",8],["rhs_mag_M433_HEDP",7],["HandGrenade",2]]],
+	["<BACKPACK ITEMS >> ",[]]
 	,["<IDENTITY >>",face_white,voice_us, ""]
 ];
- 
+
 kit_ussf_r = [
-    ["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_rifleman","rhsusf_falconii_mc","rhsusf_opscore_mc_pelt",""],
-    ["<PRIMARY WEAPON >>  ","rhs_weap_hk416d145","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","rhsusf_acc_anpeq15_bk_h","rhsusf_acc_ACOG3_USMC_3d",""]],
-    ["<LAUNCHER WEAPON >>  ","","",["","","",""]],
-    ["<HANDGUN WEAPON >>  ","","",["","","",""]],
-    ["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
-    ["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
-    ["<VEST ITEMS >> ",[["PRIMARY MAG",10],["HandGrenade",2]]],
-    ["<BACKPACK ITEMS >> ",[["rhsusf_100Rnd_556x45_M855_soft_pouch",4]]]
+	["<EQUIPEMENT >>  ","rhs_uniform_g3_mc","rhsusf_spc_rifleman","rhsusf_falconii_mc","rhsusf_opscore_mc_pelt",""],
+	["<PRIMARY WEAPON >>  ","rhs_weap_hk416d145","rhs_mag_30Rnd_556x45_M855A1_Stanag",["","rhsusf_acc_anpeq15_bk_h","rhsusf_acc_ACOG3_USMC_3d",""]],
+	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
+	["<HANDGUN WEAPON >>  ","","",["","","",""]],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
+	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
+	["<VEST ITEMS >> ",[["PRIMARY MAG",10],["HandGrenade",2]]],
+	["<BACKPACK ITEMS >> ",[["rhsusf_100Rnd_556x45_M855_soft_pouch",4]]]
 	,["<IDENTITY >>",face_white,voice_us, ""]
 ];
 //}}}
@@ -421,7 +421,7 @@ kit_ussf_r = [
 //{{{	Random Items
 #define syr_u ["rhsgref_uniform_woodland","rhsgref_uniform_woodland","rhsgref_uniform_woodland","rhsgref_uniform_woodland_olive"]
 #define syr_v ["V_TacVest_camo","V_TacVest_oli","V_I_G_resistanceLeader_F"]
-#define syr_h ["usm_helmet_pasgt_w","usm_helmet_pasgt_g_w","usm_bdu_cap_wdl","usm_bdu_cap_portliz","usm_bdu_cap_odg","H_PASGT_basic_olive_F","H_Cap_blk","H_Cap_grn","H_Cap_oli","CUP_H_FR_Cap_Headset_Green","rhsgref_helmet_pasgt_olive","ssh68_khaki"]
+#define syr_h ["usm_helmet_pasgt_w","usm_helmet_pasgt_g_w","usm_bdu_cap_wdl","usm_bdu_cap_portliz","usm_bdu_cap_odg","H_PASGT_basic_olive_F","H_Cap_blk","H_Cap_grn","H_Cap_oli","CUP_H_FR_Cap_Headset_Green","ssh68_khaki"]
 
 #define syr_ar_w ["rhs_weap_pkm","hlc_rifle_rpk"]
 #define syr_ar_a ["rhs_100Rnd_762x54mmR","hlc_75Rnd_762x39_Drum"]

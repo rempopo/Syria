@@ -7,6 +7,9 @@
 // Debriefings
 #include "dzn_tSFramework\Modules\MissionConditions\Endings.hpp"
 
+// Radio Messages
+#include "dzn_tSFramework\Modules\RadioMsg\messages.hpp"
+
 enableDebugConsole = 1;
 disabledAI = 1;
 respawn = 3;
