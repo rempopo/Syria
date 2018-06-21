@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=26;
 	};
 	class Camera
 	{
-		pos[]={5133.1509,472.30734,5346.7051};
-		dir[]={0.23474306,-0.86883265,0.43609521};
-		up[]={0.41179675,0.49514797,0.76501584};
-		aside[]={0.88059694,3.5360863e-006,-0.47401759};
+		pos[]={5884.0161,183.43184,4819.8979};
+		dir[]={0.25302291,-0.44254345,-0.86040628};
+		up[]={0.12486558,0.89672494,-0.42460999};
+		aside[]={-0.95945251,-2.7590431e-007,-0.28214225};
 	};
 };
 binarizationWanted=0;
@@ -221,6 +221,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -269,25 +288,6 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
 		nAttributes=2;
 	};
 	class Category1
@@ -331,7 +331,7 @@ class Mission
 		forecastLightnings=0.1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
+		year=2019;
 		month=7;
 		day=6;
 		hour=12;
@@ -2402,6 +2402,7 @@ class Mission
 							};
 							id=217;
 							type="LocationArea_F";
+							atlOffset=7.6293945e-006;
 						};
 						class Item3
 						{
@@ -2413,6 +2414,7 @@ class Mission
 							};
 							id=218;
 							type="LocationArea_F";
+							atlOffset=-7.6293945e-006;
 						};
 						class Item4
 						{
@@ -2727,6 +2729,7 @@ class Mission
 			};
 			id=178;
 			type="EmptyDetectorAreaR50";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item59
 		{
@@ -3167,6 +3170,7 @@ class Mission
 			};
 			id=202;
 			type="EmptyDetectorAreaR50";
+			atlOffset=7.6293945e-006;
 		};
 		class Item65
 		{
@@ -3914,7 +3918,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5006.9648,206.82335,5859.3921};
-			angle=3.9090123;
+			angle=3.9090121;
 			class Attributes
 			{
 				condition="call{this}";
@@ -4182,7 +4186,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 			id=271;
-			atlOffset=0.041435242;
+			atlOffset=0.041427612;
 		};
 		class Item110
 		{
@@ -4202,7 +4206,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 			id=273;
-			atlOffset=0.036834717;
+			atlOffset=0.036827087;
 		};
 		class Item112
 		{
@@ -4232,7 +4236,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 			id=276;
-			atlOffset=0.0062026978;
+			atlOffset=0.0061950684;
 		};
 		class Item115
 		{
@@ -4272,7 +4276,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 			id=280;
-			atlOffset=-0.022315979;
+			atlOffset=-0.022323608;
 		};
 		class Item119
 		{
