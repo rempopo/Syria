@@ -1353,7 +1353,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5534.0781,119.44096,5447.498};
-			angle=5.5190797;
+			angle=5.5190792;
 			class Attributes
 			{
 				condition="call{this}";
@@ -4230,7 +4230,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5006.9648,206.82335,5859.3921};
-			angle=3.9090114;
+			angle=3.9090109;
 			class Attributes
 			{
 				condition="call{this}";
@@ -4956,7 +4956,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4641.6631,142.64667,5873.9453};
+				position[]={4641.0425,142.65689,5873.3657};
 				angles[]={0.014998405,0,6.2806959};
 			};
 			id=317;
@@ -5035,7 +5035,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=10;
+							value=5;
 						};
 					};
 				};
