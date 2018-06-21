@@ -8,22 +8,22 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=316;
+		nextID=317;
 	};
 	class MarkerIDProvider
 	{
-		nextID=5;
+		nextID=71;
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={5884.0161,183.43184,4819.8979};
-		dir[]={0.25302291,-0.44254345,-0.86040628};
-		up[]={0.12486558,0.89672494,-0.42460999};
-		aside[]={-0.95945251,-2.7590431e-007,-0.28214225};
+		pos[]={5530.7373,155.6035,5550.9063};
+		dir[]={-0.32609478,-0.47858649,-0.81525952};
+		up[]={-0.17774393,0.87803465,-0.44437149};
+		aside[]={-0.92849445,1.504377e-007,0.37138769};
 	};
 };
 binarizationWanted=0;
@@ -221,25 +221,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -285,6 +266,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -341,7 +341,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=154;
+		items=155;
 		class Item0
 		{
 			dataType="Object";
@@ -1351,12 +1351,12 @@ class Mission
 		class Item41
 		{
 			dataType="Trigger";
-			position[]={5531.5342,119.91498,5449.6089};
-			angle=5.5190792;
+			position[]={5534.0776,119.44092,5447.498};
+			angle=5.5190797;
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{{_x setFuel 0;} forEach [pv1,pv2,pv3,pv4,pv5];" \n "d_cross sideRadio ""RadioMsg3"";" \n "" \n """mrk1"" setMarkerAlpha 1;" \n """m_cross"" setMarkerAlpha 1;" \n "" \n "west setFriend [resistance, 0];" \n "resistance setFriend [west, 0];}";
+				onActivation="call{{_x setFuel 0;} forEach [pv1,pv2,pv3,pv4,pv5];" \n "d_cross sideRadio ""RadioMsg3"";" \n "" \n """mrk1"" setMarkerAlpha 1;" \n """m_cross"" setMarkerAlpha 1;" \n """bald"" setMarkerAlpha 1;" \n "" \n "west setFriend [resistance, 0];" \n "resistance setFriend [west, 0];}";
 				sizeA=82.747002;
 				sizeB=9.7010002;
 				activationBy="WEST";
@@ -1364,7 +1364,7 @@ class Mission
 			};
 			id=90;
 			type="EmptyDetectorAreaR50";
-			atlOffset=5.3119965;
+			atlOffset=5.3119049;
 		};
 		class Item42
 		{
@@ -1897,8 +1897,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5463.6909,127.56403,5583.0508};
-				angles[]={0.094719015,2.9225016,0.052447144};
+				position[]={5412.0303,140.08301,5691.7627};
+				angles[]={0.027492445,2.9225016,6.268187};
 			};
 			side="Empty";
 			flags=4;
@@ -2296,8 +2296,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4048.7505,128.10194,6977.6997};
-						angles[]={5.7938776,0,6.22575};
+						position[]={4318.25,134.32268,6778.4717};
+						angles[]={6.2232599,0,6.1612916};
 					};
 					name="dzn_dynai_core";
 					id=153;
@@ -2433,7 +2433,7 @@ class Mission
 				};
 			};
 			id=154;
-			atlOffset=-1.6787033;
+			atlOffset=-6.3774872;
 		};
 		class Item52
 		{
@@ -2447,7 +2447,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5463.1958,124.95949,5587.7896};
+						position[]={5411.5352,137.71558,5696.5015};
 						angles[]={0,5.8235831,0};
 					};
 					side="Independent";
@@ -2476,7 +2476,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5466.5083,125.5948,5580.2017};
+						position[]={5413.9976,137.89722,5687.3193};
 						angles[]={0,5.4739618,0};
 					};
 					side="Independent";
@@ -2505,7 +2505,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5462.186,124.7373,5589.9561};
+						position[]={5410.5254,137.77609,5698.668};
 						angles[]={0,2.7884357,0};
 					};
 					side="Independent";
@@ -2515,12 +2515,14 @@ class Mission
 					};
 					id=172;
 					type="I_soldier_F";
+					atlOffset=1.5258789e-005;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=171;
+			atlOffset=1.5258789e-005;
 		};
 		class Item55
 		{
@@ -3157,7 +3159,7 @@ class Mission
 		class Item64
 		{
 			dataType="Trigger";
-			position[]={5484.8652,125.97923,5530.9434};
+			position[]={5428.7837,134.72008,5646.9023};
 			angle=5.829102;
 			class Attributes
 			{
@@ -3170,7 +3172,6 @@ class Mission
 			};
 			id=202;
 			type="EmptyDetectorAreaR50";
-			atlOffset=7.6293945e-006;
 		};
 		class Item65
 		{
@@ -3179,7 +3180,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{!alive h_evac;}";
-				onActivation="call{d_cross sideRadio ""RadioMsg6"";" \n """mrk2"" setMarkerAlpha 1;" \n """mrk1"" setMarkerAlpha 0;}";
+				onActivation="call{d_cross sideRadio ""RadioMsg6"";" \n """mrk2"" setMarkerAlpha 1;" \n """mrk1"" setMarkerAlpha 0;" \n """bald"" setMarkerAlpha 0;}";
 				sizeA=0;
 				sizeB=0;
 				timeout[]={10,10,10};
@@ -3207,7 +3208,7 @@ class Mission
 		class Item67
 		{
 			dataType="Trigger";
-			position[]={5420.4619,189.14594,5664.0645};
+			position[]={5476.0435,177.91428,5541.6504};
 			angle=5.7101722;
 			class Attributes
 			{
@@ -3220,7 +3221,7 @@ class Mission
 			};
 			id=205;
 			type="EmptyDetectorAreaR50";
-			atlOffset=51.735062;
+			atlOffset=51.735039;
 		};
 		class Item68
 		{
@@ -3918,7 +3919,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5006.9648,206.82335,5859.3921};
-			angle=3.9090121;
+			angle=3.9090118;
 			class Attributes
 			{
 				condition="call{this}";
@@ -4626,6 +4627,18 @@ class Mission
 			colorName="ColorBlue";
 			id=315;
 			atlOffset=-0.016082764;
+		};
+		class Item154
+		{
+			dataType="Marker";
+			position[]={4603.6831,128.827,5290.7739};
+			name="bald";
+			type="mil_end";
+			colorName="ColorBlue";
+			alpha=0;
+			angle=90;
+			id=316;
+			atlOffset=-0.93464661;
 		};
 	};
 	class Connections
