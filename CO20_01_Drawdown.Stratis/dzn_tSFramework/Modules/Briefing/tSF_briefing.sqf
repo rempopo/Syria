@@ -63,4 +63,4 @@ TOPIC("VII. Замечания для GSO:")
 END
 };
 
-ADD_TOPICSDD_TOPICS
+ADD_TOPICS
