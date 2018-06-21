@@ -27,7 +27,7 @@
 			]
 		]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","SAFE","YELLOW","WEDGE"]
+	,["FULL","SAFE","YELLOW","WEDGE"]
 ]
 
 ,[
@@ -54,11 +54,13 @@
 					,["O_Soldier_F", ["indoors"], "kit_syr_random"]
 					,["O_Soldier_F", ["indoors"], "kit_syr_random"]
 					,["O_Soldier_F", ["indoors"], "kit_syr_random"]
+					,["O_Soldier_F", ["indoors"], "kit_syr_random"]
+					,["O_Soldier_F", ["indoors"], "kit_syr_random"]
 				]
 			]
 		]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","AWARE","YELLOW","WEDGE"]
+	,["FULL","AWARE","YELLOW","WEDGE"]
 ]
 
 ,[
@@ -67,7 +69,7 @@
 	/* Groups: */
 		,[
 			[
-			4, /* Groups quantity */
+			3, /* Groups quantity */
 			/* Units */
 				[
 					["O_Soldier_F", [], "kit_syr_random"]
@@ -77,7 +79,7 @@
 			]
 		]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","AWARE","YELLOW","WEDGE"]
+	,["FULL","AWARE","YELLOW","WEDGE"]
 ]
 
 ,[
@@ -97,6 +99,6 @@
 			]
 		]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","AWARE","YELLOW","WEDGE"]
+	,["FULL","AWARE","YELLOW","WEDGE"]
 	,{ ts_tasks > 0 }
 ]
