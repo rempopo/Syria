@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=323;
+		nextID=324;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=42;
+		nextID=50;
 	};
 	class Camera
 	{
@@ -223,25 +223,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -287,6 +268,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -1366,7 +1366,7 @@ class Mission
 			};
 			id=90;
 			type="EmptyDetectorAreaR50";
-			atlOffset=5.3119965;
+			atlOffset=5.3120041;
 		};
 		class Item42
 		{
@@ -2110,7 +2110,7 @@ class Mission
 			name="3DEN Tools Layer";
 			class Entities
 			{
-				items=3;
+				items=4;
 				class Item0
 				{
 					dataType="Logic";
@@ -2153,9 +2153,25 @@ class Mission
 					id=149;
 					type="HeadlessClient_F";
 				};
+				class Item3
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={5530.1519,175.72507,5494.1211};
+						angles[]={0,0.43341842,0};
+					};
+					name="tSF_CoverMap_1";
+					areaSize[]={1015.5208,0,368.53784};
+					areaIsRectangle=1;
+					flags=1;
+					id=323;
+					type="ModuleCoverMap_F";
+					atlOffset=63.769943;
+				};
 			};
 			id=147;
-			atlOffset=29.882851;
+			atlOffset=16.838348;
 		};
 		class Item49
 		{
@@ -4230,7 +4246,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5006.9648,206.82335,5859.3921};
-			angle=3.9090104;
+			angle=3.9090099;
 			class Attributes
 			{
 				condition="call{this}";
