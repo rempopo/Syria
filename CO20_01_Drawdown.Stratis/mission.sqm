@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=317;
+		nextID=318;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5447.6226,209.65594,5561.8633};
-		dir[]={0.65544868,-0.46651465,-0.59411341};
-		up[]={0.34567001,0.88448679,-0.31332311};
-		aside[]={-0.67165595,-1.8565916e-006,-0.74100584};
+		pos[]={4678.2393,171.32994,5887.0513};
+		dir[]={-0.73373795,-0.66963351,-0.11508522};
+		up[]={-0.66154695,0.74269128,-0.10376244};
+		aside[]={-0.15495619,-7.4715354e-007,0.98793602};
 	};
 };
 binarizationWanted=0;
@@ -56,7 +56,8 @@ addons[]=
 	"CUP_Creatures_Military_BAF",
 	"CUP_AirVehciles_AW159",
 	"A3_Modules_F_Effects",
-	"A3_Structures_F_Mil_Flags"
+	"A3_Structures_F_Mil_Flags",
+	"A3_Modules_F_Sites"
 };
 class AddonsMetaData
 {
@@ -341,7 +342,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=155;
+		items=156;
 		class Item0
 		{
 			dataType="Object";
@@ -1352,7 +1353,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5534.0781,119.44096,5447.498};
-			angle=5.5190802;
+			angle=5.5190797;
 			class Attributes
 			{
 				condition="call{this}";
@@ -4229,7 +4230,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5006.9648,206.82335,5859.3921};
-			angle=3.9090116;
+			angle=3.9090114;
 			class Attributes
 			{
 				condition="call{this}";
@@ -4949,6 +4950,97 @@ class Mission
 			angle=90;
 			id=316;
 			atlOffset=-0.93464661;
+		};
+		class Item155
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4641.6631,142.64667,5873.9453};
+				angles[]={0.014998405,0,6.2806959};
+			};
+			id=317;
+			type="Site_Ambient";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Site_Ambient_animalCount";
+					expression="_this setVariable ['animalCount',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=5;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Site_Ambient_siteType";
+					expression="_this setVariable ['siteType',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Animal_goat";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="Site_Ambient_animalsInRadius";
+					expression="_this setVariable ['animalsInRadius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="Site_Ambient_radius";
+					expression="_this setVariable ['radius',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
