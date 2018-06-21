@@ -17,8 +17,8 @@ tSF_module_Briefing = true;
 tSF_module_tSNotes = true;
 tSF_module_tSNotesSettings = true;
 
-tSF_module_CCP = true;
-tSF_module_FARP = true;
+tSF_module_CCP = false;
+tSF_module_FARP = false;
 tSF_module_Interactives = false;
 tSF_module_ACEActions = true;
 tSF_module_AirborneSupport = false;
@@ -28,7 +28,7 @@ tSF_module_EditorVehicleCrew = false;
 tSF_module_EditorUnitBehavior = false;
 tSF_module_EditorRadioSettings = false;
 
-tSF_module_POM = true;
+tSF_module_POM = false;
 tSF_module_tSAdminTools = true;
 
 tSF_module_Conversations = false;
