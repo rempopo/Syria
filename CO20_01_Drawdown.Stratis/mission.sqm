@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=58;
+		nextID=66;
 	};
 	class Camera
 	{
@@ -223,25 +223,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -290,6 +271,25 @@ class CustomAttributes
 				};
 			};
 		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
 		nAttributes=2;
 	};
 	class Category1
@@ -322,7 +322,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="01 Drawdown";
+		briefingName="01 Drawdown.";
 		overviewText="British convoy on road to Kamino";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -4247,7 +4247,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5006.9648,206.82335,5859.3921};
-			angle=3.9090097;
+			angle=3.9090095;
 			class Attributes
 			{
 				condition="call{this}";
