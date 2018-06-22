@@ -31,12 +31,12 @@
 ]
 
 ,[
-	"regroup" /* Zone Name */
+	"regroup1" /* Zone Name */
 	,"EAST",true, /* Side, is Active */ [],[]
 	/* Groups: */
 		,[
 			[
-			4, /* Groups quantity */
+			2, /* Groups quantity */
 			/* Units */
 				[
 					["O_Soldier_F", [], "kit_syr_random"]
@@ -45,7 +45,6 @@
 					,["O_Soldier_F", [], "kit_syr_random"]
 				]
 			]
-	
 			,[
 			1, /* Groups quantity */
 			/* Units */
@@ -60,7 +59,47 @@
 			]
 		]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["FULL","AWARE","YELLOW","WEDGE"]
+	,["LIMITED","SAFE","YELLOW","COLUMN"]
+]
+
+,[
+	"regroup2" /* Zone Name */
+	,"EAST",true, /* Side, is Active */ [],[]
+	/* Groups: */
+		,[
+			[
+			2, /* Groups quantity */
+			/* Units */
+				[
+					["O_Soldier_F", [], "kit_syr_random"]
+					,["O_Soldier_F", [], "kit_syr_random"]
+					,["O_Soldier_F", [], "kit_syr_random"]
+					,["O_Soldier_F", [], "kit_syr_random"]
+				]
+			]
+		]
+	/* Behavior: Speed, Behavior, Combat mode, Formation */
+	,["LIMITED","SAFE","YELLOW","COLUMN"]
+]
+
+,[
+	"regroup3" /* Zone Name */
+	,"EAST",true, /* Side, is Active */ [],[]
+	/* Groups: */
+		,[
+			[
+			2, /* Groups quantity */
+			/* Units */
+				[
+					["O_Soldier_F", [], "kit_syr_random"]
+					,["O_Soldier_F", [], "kit_syr_random"]
+					,["O_Soldier_F", [], "kit_syr_random"]
+					,["O_Soldier_F", [], "kit_syr_random"]
+				]
+			]
+		]
+	/* Behavior: Speed, Behavior, Combat mode, Formation */
+	,["LIMITED","SAFE","YELLOW","COLUMN"]
 ]
 
 ,[

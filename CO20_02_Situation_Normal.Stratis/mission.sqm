@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=368;
+		nextID=383;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=57;
+		nextID=71;
 	};
 	class Camera
 	{
-		pos[]={4321.3232,257.18042,4462.0586};
-		dir[]={-0.61769849,-0.58903992,0.52105916};
-		up[]={-0.45023984,0.80810362,0.37979934};
-		aside[]={0.6447863,-3.8061989e-007,0.7643739};
+		pos[]={5849.4722,233.32103,5104.9824};
+		dir[]={-0.82680547,-0.32199398,-0.46146238};
+		up[]={-0.28122669,0.94670492,-0.15696105};
+		aside[]={-0.48741814,8.691859e-008,0.87330651};
 	};
 };
 binarizationWanted=0;
@@ -81,7 +81,7 @@ randomSeed=419509;
 class ScenarioData
 {
 	author="lim";
-	overviewText="British convoy on road to Kamino";
+	overviewText="British forces struggle to regroup";
 	overViewPicture="overview.jpg";
 	overViewPictureLocked="overview.jpg";
 	onLoadMission="British convoy on road to Kamino";
@@ -202,8 +202,9 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="01 Drawdown";
-		overviewText="British convoy on road to Kamino";
+		briefingName="02 Situation Normal";
+		overviewText="British forces struggle to regroup";
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -224,7 +225,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=17;
+		items=22;
 		class Item0
 		{
 			dataType="Layer";
@@ -812,13 +813,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={1698.8329,5.5000153,5349.7202};
+						position[]={1698.833,5.5,5349.7202};
 					};
 					name="tSF_Scenario_Logic";
-					init="tSF_SummaryText = 'British convoy on road to Kamino'";
+					init="call{tSF_SummaryText = 'British forces struggle to regroup'}";
 					id=146;
 					type="Logic";
-					atlOffset=1.5258789e-005;
 				};
 				class Item1
 				{
@@ -865,7 +865,7 @@ class Mission
 				};
 			};
 			id=147;
-			atlOffset=-32.336761;
+			atlOffset=-32.336784;
 		};
 		class Item3
 		{
@@ -1012,6 +1012,7 @@ class Mission
 					name="dzn_dynai_core";
 					id=153;
 					type="Logic";
+					atlOffset=7.6293945e-006;
 				};
 				class Item1
 				{
@@ -1025,8 +1026,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={3509.9805,111.30139,3647.1777};
-								angles[]={6.0906005,0,0.16596062};
+								position[]={3632.1333,153.47096,3834.5654};
+								angles[]={0.16595882,0,6.2132993};
 							};
 							name="forest";
 							id=333;
@@ -1036,7 +1037,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={3603.3911,101.09172,4081.3303};
-							angle=1.2941834;
+							angle=1.2941833;
 							class Attributes
 							{
 								sizeA=127.25156;
@@ -1090,7 +1091,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={3685.8599,68.272995,4096.2769};
-								angles[]={-0,3.5606189,0.049956869};
+								angles[]={0,3.5606189,0.049956869};
 							};
 							id=339;
 							type="LocationArea_F";
@@ -1110,7 +1111,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={3298.9399,44.973576,4019.5879};
-							angle=5.9564948;
+							angle=5.9564939;
 							class Attributes
 							{
 								condition="call{this}";
@@ -1126,7 +1127,7 @@ class Mission
 						};
 					};
 					id=335;
-					atlOffset=-4.1488609;
+					atlOffset=-3.5719261;
 				};
 				class Item2
 				{
@@ -1134,41 +1135,41 @@ class Mission
 					name="regroup zone";
 					class Entities
 					{
-						items=10;
+						items=16;
 						class Item0
 						{
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={3697.5869,187.16005,4491.5068};
-								angles[]={0.072371267,0,6.2606897};
+								position[]={4208.4404,194.69743,3843.9277};
+								angles[]={6.0714092,0,0.354379};
 							};
-							name="regroup";
+							name="regroup1";
 							id=342;
 							type="Logic";
 						};
 						class Item1
 						{
 							dataType="Trigger";
-							position[]={4158.8794,184.00224,4556.1719};
+							position[]={4216.3965,184.00224,4470.4395};
 							angle=5.2846975;
 							class Attributes
 							{
-								sizeA=128.29463;
-								sizeB=442.24579;
+								sizeA=84.199425;
+								sizeB=211.04863;
 								isRectangle=1;
 							};
 							id=343;
 							type="EmptyDetectorAreaR250";
-							atlOffset=-29.947647;
+							atlOffset=-16.973541;
 						};
 						class Item2
 						{
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4152.8823,193.75125,3893.5181};
-								angles[]={6.2631893,0,0.034986377};
+								position[]={4838.6304,115.64886,3534.9751};
+								angles[]={0.54591614,0,0.27995032};
 							};
 							name="camp1";
 							id=347;
@@ -1179,8 +1180,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={3824.9773,190.34256,4690.127};
-								angles[]={6.270689,0,0.06739822};
+								position[]={3744.2998,212.92754,4887.5332};
+								angles[]={6.1760983,0,0.092236429};
 							};
 							id=359;
 							type="LocationArea_F";
@@ -1223,8 +1224,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4503.7568,201.04813,4376.9238};
-								angles[]={0.024996169,0,6.278182};
+								position[]={4504.7148,201.10327,4371.064};
+								angles[]={6.2706842,0,6.248199};
 							};
 							id=364;
 							type="LocationArea_F";
@@ -1234,7 +1235,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4285.7949,203.38,4507.1396};
+								position[]={4540.5986,197.67934,4620.6128};
+								angles[]={0.017500184,0,6.2332287};
 							};
 							id=366;
 							type="LocationArea_F";
@@ -1250,13 +1252,91 @@ class Mission
 							id=367;
 							type="LocationArea_F";
 						};
+						class Item10
+						{
+							dataType="Trigger";
+							position[]={4489.7036,200.56277,4456.0654};
+							angle=0.16917902;
+							class Attributes
+							{
+								sizeA=67.14003;
+								sizeB=229.89304;
+								isRectangle=1;
+							};
+							id=368;
+							type="EmptyDetectorAreaR250";
+							atlOffset=-7.7927856;
+						};
+						class Item11
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4013.9956,141.39824,3953.9331};
+								angles[]={0.15133426,0,0.42077163};
+							};
+							name="regroup2";
+							id=369;
+							type="Logic";
+						};
+						class Item12
+						{
+							dataType="Trigger";
+							position[]={3817.6208,191.26422,4737.7559};
+							angle=5.7451906;
+							class Attributes
+							{
+								sizeA=84.199425;
+								sizeB=220.27011;
+								isRectangle=1;
+							};
+							id=370;
+							type="EmptyDetectorAreaR250";
+							atlOffset=1.6556854;
+						};
+						class Item13
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4515.3359,179.33333,3717.5381};
+								angles[]={0.259045,0,6.0032372};
+							};
+							name="regroup3";
+							id=371;
+							type="Logic";
+						};
+						class Item14
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={3825.4448,190.51578,4683.0957};
+								angles[]={6.1760983,0,0.092236429};
+							};
+							id=372;
+							type="LocationArea_F";
+							atlOffset=0.032501221;
+						};
+						class Item15
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={3888.2441,207.81674,4551.2676};
+								angles[]={6.1760983,0,0.092236429};
+							};
+							id=373;
+							type="LocationArea_F";
+							atlOffset=-0.12007141;
+						};
 					};
 					id=344;
-					atlOffset=6.0253296;
+					atlOffset=16.434067;
 				};
 			};
 			id=154;
-			atlOffset=29.177322;
+			atlOffset=75.985313;
 		};
 		class Item6
 		{
@@ -1889,16 +1969,996 @@ class Mission
 			};
 			id=355;
 		};
+		class Item17
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5374.6528,218.847,5250.7847};
+				angles[]={0.082314201,1.3663076,6.278182};
+			};
+			id=375;
+			type="ModuleEffectsSmoke_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifeTime";
+					expression="_this setVariable ['ParticleLifeTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifting";
+					expression="_this setVariable ['ParticleLifting',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEffectsSmoke_F_ColorAlpha";
+					expression="_this setVariable ['ColorAlpha',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleEffectsSmoke_F_ColorBlue";
+					expression="_this setVariable ['ColorBlue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleEffectsSmoke_F_Timeout";
+					expression="_this setVariable ['Timeout',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleEffectsSmoke_F_Expansion";
+					expression="_this setVariable ['Expansion',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleEffectsSmoke_F_ColorRed";
+					expression="_this setVariable ['ColorRed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleEffectsSmoke_F_ParticleDensity";
+					expression="_this setVariable ['ParticleDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleEffectsSmoke_F_ColorGreen";
+					expression="_this setVariable ['ColorGreen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleEffectsSmoke_F_EffectSize";
+					expression="_this setVariable ['EffectSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleEffectsSmoke_F_ParticleSpeed";
+					expression="_this setVariable ['ParticleSpeed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleEffectsSmoke_F_ParticleSize";
+					expression="_this setVariable ['ParticleSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleEffectsSmoke_F_WindEffect";
+					expression="_this setVariable ['WindEffect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=13;
+			};
+		};
+		class Item18
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={5015.998,208.32375,5895.7295};
+				angles[]={0.082314201,1.3663076,6.278182};
+			};
+			id=376;
+			type="ModuleEffectsSmoke_F";
+			atlOffset=0.03263855;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifeTime";
+					expression="_this setVariable ['ParticleLifeTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifting";
+					expression="_this setVariable ['ParticleLifting',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEffectsSmoke_F_ColorAlpha";
+					expression="_this setVariable ['ColorAlpha',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleEffectsSmoke_F_ColorBlue";
+					expression="_this setVariable ['ColorBlue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleEffectsSmoke_F_Timeout";
+					expression="_this setVariable ['Timeout',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleEffectsSmoke_F_Expansion";
+					expression="_this setVariable ['Expansion',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleEffectsSmoke_F_ColorRed";
+					expression="_this setVariable ['ColorRed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleEffectsSmoke_F_ParticleDensity";
+					expression="_this setVariable ['ParticleDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleEffectsSmoke_F_ColorGreen";
+					expression="_this setVariable ['ColorGreen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleEffectsSmoke_F_EffectSize";
+					expression="_this setVariable ['EffectSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleEffectsSmoke_F_ParticleSpeed";
+					expression="_this setVariable ['ParticleSpeed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleEffectsSmoke_F_ParticleSize";
+					expression="_this setVariable ['ParticleSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleEffectsSmoke_F_WindEffect";
+					expression="_this setVariable ['WindEffect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=13;
+			};
+		};
+		class Item19
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4622.2256,106.64075,5375.7485};
+				angles[]={0.082314201,1.3663076,6.278182};
+			};
+			id=378;
+			type="ModuleEffectsSmoke_F";
+			atlOffset=-0.026184082;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifeTime";
+					expression="_this setVariable ['ParticleLifeTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=50;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleEffectsSmoke_F_ParticleLifting";
+					expression="_this setVariable ['ParticleLifting',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleEffectsSmoke_F_ColorAlpha";
+					expression="_this setVariable ['ColorAlpha',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleEffectsSmoke_F_ColorBlue";
+					expression="_this setVariable ['ColorBlue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleEffectsSmoke_F_Timeout";
+					expression="_this setVariable ['Timeout',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleEffectsSmoke_F_Expansion";
+					expression="_this setVariable ['Expansion',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleEffectsSmoke_F_ColorRed";
+					expression="_this setVariable ['ColorRed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleEffectsSmoke_F_ParticleDensity";
+					expression="_this setVariable ['ParticleDensity',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleEffectsSmoke_F_ColorGreen";
+					expression="_this setVariable ['ColorGreen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleEffectsSmoke_F_EffectSize";
+					expression="_this setVariable ['EffectSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleEffectsSmoke_F_ParticleSpeed";
+					expression="_this setVariable ['ParticleSpeed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="ModuleEffectsSmoke_F_ParticleSize";
+					expression="_this setVariable ['ParticleSize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="ModuleEffectsSmoke_F_WindEffect";
+					expression="_this setVariable ['WindEffect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=13;
+			};
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6425.2632,7.3360052,5434.1777};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="r16";
+						description="1'6";
+					};
+					id=380;
+					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=379;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1'6";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6427.3931,7.3340211,5431.8467};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="rfal";
+						description="Орел";
+					};
+					id=382;
+					type="B_Soldier_F";
+					atlOffset=-0.0040006638;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=381;
+			atlOffset=-0.0040006638;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Орел";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=23;
+			nextID=29;
 		};
 		class Links
 		{
-			items=23;
+			items=29;
 			class Item0
 			{
 				linkID=0;
@@ -2062,7 +3122,7 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=359;
+				item0=360;
 				item1=342;
 				class CustomData
 				{
@@ -2072,7 +3132,7 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=360;
+				item0=361;
 				item1=342;
 				class CustomData
 				{
@@ -2082,8 +3142,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=361;
-				item1=342;
+				item0=369;
+				item1=370;
 				class CustomData
 				{
 					type="Sync";
@@ -2092,8 +3152,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=362;
-				item1=342;
+				item0=369;
+				item1=359;
 				class CustomData
 				{
 					type="Sync";
@@ -2102,8 +3162,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=364;
-				item1=342;
+				item0=367;
+				item1=371;
 				class CustomData
 				{
 					type="Sync";
@@ -2112,8 +3172,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=366;
-				item1=342;
+				item0=364;
+				item1=371;
 				class CustomData
 				{
 					type="Sync";
@@ -2122,8 +3182,68 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=367;
-				item1=342;
+				item0=366;
+				item1=371;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item23
+			{
+				linkID=23;
+				item0=368;
+				item1=371;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item24
+			{
+				linkID=24;
+				item0=362;
+				item1=371;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item25
+			{
+				linkID=25;
+				item0=371;
+				item1=153;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item26
+			{
+				linkID=26;
+				item0=369;
+				item1=153;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item27
+			{
+				linkID=27;
+				item0=372;
+				item1=369;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item28
+			{
+				linkID=28;
+				item0=373;
+				item1=369;
 				class CustomData
 				{
 					type="Sync";
