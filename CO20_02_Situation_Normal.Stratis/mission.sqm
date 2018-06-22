@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=383;
+		nextID=385;
 	};
 	class MarkerIDProvider
 	{
@@ -1256,7 +1256,7 @@ class Mission
 						{
 							dataType="Trigger";
 							position[]={4489.7036,200.56277,4456.0654};
-							angle=0.16917902;
+							angle=0.16917901;
 							class Attributes
 							{
 								sizeA=67.14003;
@@ -1702,7 +1702,7 @@ class Mission
 			class Attributes
 			{
 				condition="call{this}";
-				onActivation="call{""exfil"" setMarkerAlpha 1;}";
+				onActivation="call{""exfil"" setMarkerAlpha 1;" \n "rfal sideRadio ""RadioMsg1"";r16 sideRadio ""RadioMsg2"";" \n "rfal sideRadio ""RadioMsg3"";r16 sideRadio ""RadioMsg4"";" \n "rfal sideRadio ""RadioMsg5"";r16 sideRadio ""RadioMsg6"";}";
 				activationBy="WEST";
 			};
 			id=330;
@@ -2780,6 +2780,7 @@ class Mission
 					};
 					id=380;
 					type="B_Soldier_F";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2828,6 +2829,7 @@ class Mission
 			{
 			};
 			id=379;
+			atlOffset=-4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
